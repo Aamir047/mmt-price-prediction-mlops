@@ -1,0 +1,9 @@
+fastapi==0.143.0
+uvicorn
+streamlit==1.65.0
+pandas
+numpy
+joblib
+scikit-learn==1.9.1
+sentence-transformers==6.1.0
+requests

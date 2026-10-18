@@ -1,0 +1,9 @@
+.venv/
+.venv-test/
+__pycache__/
+*.py[cod]
+.git/
+.ipynb_checkpoints/
+Data/Raw/
+requirements.txt
+API/frontend_test.py

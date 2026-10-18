@@ -1,0 +1,16 @@
+services:
+  api:
+    image: mmt-price-predictor:latest
+    command: python -m uvicorn API.app:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+
+  frontend:
+    image: mmt-price-predictor:latest
+    command: python -m streamlit run API/frontend.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8501:8501"
+    environment:
+      API_URL: http://api:8000/predict
+    depends_on:
+      - api

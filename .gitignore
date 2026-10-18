@@ -1,0 +1,36 @@
+# Python virtual environments
+.venv/
+.venv-test/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Raw datasets — keep large source data out of GitHub
+Data/Raw/
+
+# Temporary frontend testing file
+API/frontend_test.py
+
+# Large datasets and intermediate files
+Data/Raw/
+Data/discarded/
+Data/Cleaned/MMT_No_Outliers.csv
+Data/Feature Engineered/MMT_Featur_Eng2.csv
+Data/Training Data/
+
+# Large trained model - store separately or use Git LFS
+Models/random_forest_model.joblib
