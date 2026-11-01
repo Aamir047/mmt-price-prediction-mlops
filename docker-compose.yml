@@ -9,7 +9,7 @@ services:
     image: mmt-price-predictor:latest
     command: python -m streamlit run API/frontend.py --server.address 0.0.0.0 --server.port 8501
     ports:
-      - "8501:8501"
+      - "8502:8501"
     environment:
       API_URL: http://api:8000/predict
     depends_on:
